@@ -1,4 +1,6 @@
 # TacoShack-Framer
+[[My Website]](https://mitsuzi.xyz/)
+
 Selfbot framer  for the popular discord gaming bot, TacoShack. It provides many modules, which includes, auto work, auto gift, auto coupon claim, auto upgrade buys and many more
 
 I focused on mainly on being stealthy, adding alot of random variables and timings which would make it slightly harder to detect. Everything the bot sends can be quite random as well, as i made seperate threads for each module, which would make it slightly harder to find a pattern. Other than that, the framer would also sends a random command from the list every now and than along side resting for awhile. Every rest in the framer is also random, plus the cooldown. Other than that, the bot also uses most commands from lists, this includes commands which has alternate commands, for an example, !shack is the same as !b.
