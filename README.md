@@ -1,35 +1,35 @@
 # TacoShack-Farmer
 [[My Website]](https://mitsuzi.xyz/)
 
-Selfbot framer  for the popular discord gaming bot, TacoShack. It provides many modules, which includes, auto work, auto gift, auto coupon claim, auto upgrade buys and many more
+Selfbot Farmer  for the popular discord gaming bot, TacoShack. It provides many modules, which includes, auto work, auto gift, auto coupon claim, auto upgrade buys and many more
 
-I focused on mainly on being stealthy, adding alot of random variables and timings which would make it slightly harder to detect. Everything the bot sends can be quite random as well, as i made seperate threads for each module, which would make it slightly harder to find a pattern. Other than that, the framer would also sends a random command from the list every now and than along side resting for awhile. Every rest in the framer is also random, plus the cooldown. Other than that, the bot also uses most commands from lists, this includes commands which has alternate commands, for an example, !shack is the same as !b.
+I focused on mainly on being stealthy, adding alot of random variables and timings which would make it slightly harder to detect. Everything the bot sends can be quite random as well, as i made seperate threads for each module, which would make it slightly harder to find a pattern. Other than that, the farmer would also sends a random command from the list every now and than along side resting for awhile. Every rest in the farmer is also random, plus the cooldown. Other than that, the bot also uses most commands from lists, this includes commands which has alternate commands, for an example, !shack is the same as !b.
 
 # Features
 
 ### Multiple Bots
 
-You are able to run multiple bots in the same script. But please make sure each bot has one text channel dedicated to it. As tacoshack does not list who requested most of it's command, my framer can't differentnate who the bot repied to. Therefore, please only use ONE text channel for ONE bot. 
+You are able to run multiple bots in the same script. But please make sure each bot has one text channel dedicated to it. As tacoshack does not list who requested most of it's command, my farmer can't differentnate who the bot repied to. Therefore, please only use ONE text channel for ONE bot. 
 
 
 ### Secondary Channels
 
-So i coded this mainly due to wanting to leveing up on the offical taco shack server. They have a system where if you use commands and text in their offical discord server, you get EXP which you can use to level up, therefore this feature just sends messages which my framer does not care about the reply or random commands into the secondary channel list
+So i coded this mainly due to wanting to leveing up on the offical taco shack server. They have a system where if you use commands and text in their offical discord server, you get EXP which you can use to level up, therefore this feature just sends messages which my farmer does not care about the reply or random commands into the secondary channel list
 
 
 ### Auto Upgrade
 
-This is the most useful feature in the framer. It uses all the commands which displays all the different things you can buy and records the price than auto buys the cheapest options from the entire list. It also allows you to use different command for it, for an example, the employees list, requires you to do !hire, while everything else requires !buy. You can set indivisual commands.
+This is the most useful feature in the farmer. It uses all the commands which displays all the different things you can buy and records the price than auto buys the cheapest options from the entire list. It also allows you to use different command for it, for an example, the employees list, requires you to do !hire, while everything else requires !buy. You can set indivisual commands.
 
 
 ### Auto Boost
 
-This allows the framer to check what boost you have active and than buys the boosts which are inactive within your budget. You can set what boost you want to buy and leave out, in the globals python file
+This allows the farmer to check what boost you have active and than buys the boosts which are inactive within your budget. You can set what boost you want to buy and leave out, in the globals python file
 
 
 ### Standard Commands
 
-This creates threads for each of the different basic commands such as !work, !tips, !daily and so on. Commands with a cooldown basically, and runs the commands based on the cooldown +- some time to not make it easy to detect. This also includes the overtime command, the framer will automatically check if you are in a franchise and if so, runs the franchise only commands.
+This creates threads for each of the different basic commands such as !work, !tips, !daily and so on. Commands with a cooldown basically, and runs the commands based on the cooldown +- some time to not make it easy to detect. This also includes the overtime command, the farmer will automatically check if you are in a franchise and if so, runs the franchise only commands.
 
 
 ### Gambling Commands
