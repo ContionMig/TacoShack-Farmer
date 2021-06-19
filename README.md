@@ -3,23 +3,23 @@
 
 Selfbot Farmer  for the popular discord gaming bot, TacoShack. It provides many modules, which includes, auto work, auto gift, auto coupon claim, auto upgrade buys and many more
 
-I focused on mainly on being stealthy, adding alot of random variables and timings which would make it slightly harder to detect. Everything the bot sends can be quite random as well, as i made seperate threads for each module, which would make it slightly harder to find a pattern. Other than that, the farmer would also sends a random command from the list every now and than along side resting for awhile. Every rest in the farmer is also random, plus the cooldown. Other than that, the bot also uses most commands from lists, this includes commands which has alternate commands, for an example, !shack is the same as !b.
+I focused on mainly on being stealthy, adding a lot of random variables and timings which would make it slightly harder to detect. Everything the bot sends can be quite random as well, as i made separate threads for each module, which would make it slightly harder to find a pattern. Other than that, the farmer would also sends a random command from the list every now and than along side resting for awhile. Every rest in the farmer is also random, plus the cooldown. Other than that, the bot also uses most commands from lists, this includes commands which has alternate commands, for an example, !shack is the same as !b.
 
 # Features
 
 ### Multiple Bots
 
-You are able to run multiple bots in the same script. But please make sure each bot has one text channel dedicated to it. As tacoshack does not list who requested most of it's command, my farmer can't differentnate who the bot repied to. Therefore, please only use ONE text channel for ONE bot. 
+You are able to run multiple bots in the same script. But please make sure each bot has one text channel dedicated to it. As tacoshack does not list who requested most of it's command, my farmer can't differentiate who the bot replied to. Therefore, please only use ONE text channel for ONE bot. 
 
 
 ### Secondary Channels
 
-So i coded this mainly due to wanting to leveing up on the offical taco shack server. They have a system where if you use commands and text in their offical discord server, you get EXP which you can use to level up, therefore this feature just sends messages which my farmer does not care about the reply or random commands into the secondary channel list
+So i coded this mainly due to wanting to leveling up on the official taco shack server. They have a system where if you use commands and text in their official discord server, you get EXP which you can use to level up, therefore this feature just sends messages which my farmer does not care about the reply or random commands into the secondary channel list
 
 
 ### Auto Upgrade
 
-This is the most useful feature in the farmer. It uses all the commands which displays all the different things you can buy and records the price than auto buys the cheapest options from the entire list. It also allows you to use different command for it, for an example, the employees list, requires you to do !hire, while everything else requires !buy. You can set indivisual commands.
+This is the most useful feature in the farmer. It uses all the commands which displays all the different things you can buy and records the price than auto buys the cheapest options from the entire list. It also allows you to use different command for it, for an example, the employees list, requires you to do !hire, while everything else requires !buy. You can set individual commands.
 
 
 ### Auto Boost
@@ -34,7 +34,7 @@ This creates threads for each of the different basic commands such as !work, !ti
 
 ### Gambling Commands
 
-The bot will take the list of gambling commands listed in the global file, and runs them every 30 mins or so. It will run multiple times and it will also SOMEWHAT check your balance to see if you have enough. I didnt add an feature to find out the gambling price, for commands such as !roll and !scrach, so you will have to manually change the amount.
+The bot will take the list of gambling commands listed in the global file, and runs them every 30 mins or so. It will run multiple times and it will also SOMEWHAT check your balance to see if you have enough. I didn't add an feature to find out the gambling price, for commands such as !roll and !scrach, so you will have to manually change the amount.
 
 
 ### Auto Sell To Customers
@@ -49,7 +49,7 @@ This is a pretty useful feature if you do not want to get caught. It sends all m
 
 ### Auto Coupons/Claim/Gift
 
-The framer will check if you have any avaliable coupons and than sends the redeem commands according to how many coupons you have left. It will also check if you have any gifts left and sends the gift to a random user listed in the config file. Futhermore, it can also claim any task my framer has completed.
+The framer will check if you have any available coupons and than sends the redeem commands according to how many coupons you have left. It will also check if you have any gifts left and sends the gift to a random user listed in the config file. Furthermore, it can also claim any task my framer has completed.
 
 
 ### Auto Rest
@@ -63,11 +63,11 @@ It basically rolls a dice and randomly rests the entire bot. This just allows th
 - **Log ID** - Channel ID of the text channel you want the bot to send logs to
 - **Gift ID** - User ID of the user you want to auto send gifts to, its a list and it will pick randomly from the list
 - **Channel ID** - UNIQUE text channels DEDICATED to ONE BOT. So if you have 3 bots running, you will need 3 different channel ids
-- **Secondary Channel ID** - Channels you want the framer to send random commands to, either to level up or to make it less suspious
+- **Secondary Channel ID** - Channels you want the framer to send random commands to, either to level up or to make it less suspicious
 - **Bot ID** - The TacoShack bot's ID. It will read this bot's messages, so make sure its right
-- **Customer Bot ID** - The bot's ID of the customer's bot in the offical server or other whitelisted server
+- **Customer Bot ID** - The bot's ID of the customer's bot in the official server or other whitelisted server
 - **Bot Prefix** - The bot's prefix
-- **Gambling Amount** - Just for the slots command, i dont use it personally use it, so up to you. Its a list of numbers the bot will randomly pick
+- **Gambling Amount** - Just for the slots command, i don't use it personally use it, so up to you. Its a list of numbers the bot will randomly pick
 
 # Global
 - **Total Bot** - Used internally
@@ -87,7 +87,7 @@ It basically rolls a dice and randomly rests the entire bot. This just allows th
 
 # Setup
 
-My framer uses a different discord.py listed in https://github.com/dolfies/discord.py-self, so please **DO NOT** use the offical package as the self bot WILL NOT work.
+My framer uses a different discord.py listed in https://github.com/dolfies/discord.py-self, so please **DO NOT** use the official package as the self bot WILL NOT work.
 
 ### Packages Used
 ```sh
@@ -104,4 +104,3 @@ typing-extensions==3.10.0.0
 urllib3==1.26.5
 yarl==1.6.3
 ```
-
