@@ -1,8 +1,8 @@
-total_bots = 0
+total_bots = 1
 clients_config = dict()
 
 
-secondary_channel_cmd = ["work", "tip", "roll", "scratch", "cooldowns", "tasks", 'overtime', 'ot', 'w', 't']
+secondary_channel_cmd = ["work", "tip", "roll", "scratch", "cooldowns", "tasks", 'overtime']
 
 watchdog = {
     "keywords": ["selfbot", "contionmig"]
@@ -11,22 +11,22 @@ watchdog = {
 # cmd name and alternate cmds, cooldown ( mins ), franchise cmd
 cooldown_cmd = [
     {
-        "cmd": ["work", "w"],
+        "cmd": ["work"],
         "cooldown": 600,
         "franchise_cmd": False
     },
     {
-        "cmd": ["tip", "t", "tips"],
+        "cmd": ["tips"],
         "cooldown": 300,
         "franchise_cmd": False
     },
     {
-        "cmd": ["overtime", "ot"],
+        "cmd": ["overtime"],
         "cooldown": 1800,
         "franchise_cmd": True
     },
     {
-        "cmd": ["daily", "d"],
+        "cmd": ["daily"],
         "cooldown": 86400,
         "franchise_cmd": False
     },
@@ -45,10 +45,10 @@ cooldown_cmd = [
 gambling_cmd = ["roll", "scratch"]
 daily_cmd = ["daily", "clean"]
 boost_cmd = ["boosts", "shop"]
-process_cmd = ["employees", "ads", "deco", "upgrades", "shack"]
+process_cmd = ["employees", "advertisements", "decorations", "upgrades", "shack"]
 
-random_cmd = ["cooldowns", "tasks", "coupons", "sm", "a", "gift"]
-balance_cmd = ["bal", "profile", "shack", "b"]
+random_cmd = ["cooldowns", "tasks", "coupons", "gift"]
+balance_cmd = ["profile", "shack"]
 
 ads_id = ['newspaper', 'radio', 'email', 'internet', 'tv', 'blimp']
 employees_id = ['apprentice', 'cook', 'advertiser', 'greeter', 'sous', 'head', 'executive']
@@ -57,9 +57,9 @@ upgrade_id = ['paint', 'furniture', 'bathrooms', 'billboard', 'appliances', 'tip
 booster_id = ['flipper', 'karaoke', 'music', 'airplane', 'chef']
 
 # word to find, list of shit to buy, starting cmd
-autoupgrades = [["'title': 'Decorations", deco_id, "buy", "deco"],
+autoupgrades = [["'title': 'Decorations", deco_id, "buy", "decorations"],
                 ["'title': '🔹 Shack Shop  🔹'", booster_id, "buy", "shop"],
-                ["'title': 'Advertisements ", ads_id, "buy", "ads"],
+                ["'title': 'Advertisements ", ads_id, "buy", "advertisements"],
                 ["'title': 'Upgrades ", upgrade_id, "buy", "upgrades"],
                 ["'title': 'Employees ", employees_id, "hire", "employees"]]
 
