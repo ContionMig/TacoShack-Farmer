@@ -1,7 +1,16 @@
-import discord, config, random, globals
+from multiprocessing.connection import Client
+import os
+import token
+import discord
+import config, random, globals
 import framer, asyncio, helper
 from datetime import datetime
+from discord.ext import commands
+from dotenv import load_dotenv
 
+intents = discord.Intents.all()
+load_dotenv()
+bot = commands.Bot(command_prefix=config.bot_prefix, intents=intents, self_bot=True)
 
 class FrammerBot(discord.Client):
 
@@ -85,3 +94,5 @@ class FrammerBot(discord.Client):
                 if should_log:
                     log_text += "{id} (<@{id}>): {msg}".format(id=message.author.id, msg=message.content)
                     await self.get_channel(config.log_id).send(log_text)
+
+bot.run(os.getenv('token'))
