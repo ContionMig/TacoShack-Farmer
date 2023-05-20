@@ -8,9 +8,9 @@ from datetime import datetime
 from discord.ext import commands
 from dotenv import load_dotenv
 
-
+intents = discord.Intents.all()
 load_dotenv()
-bot = commands.Bot(command_prefix=config.bot_prefix, self_bot=True)
+bot = commands.Bot(command_prefix=config.bot_prefix, intents=intents, self_bot=True)
 
 class FrammerBot(discord.Client):
 
